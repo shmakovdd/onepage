@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@447&display=swap" rel="stylesheet');
+
+.section {
+    height: 100vh;
+}
+
+* {font-family: 'Raleway', sans-serif; list-style-type: none; color: #de4463; margin: 0}
+
+body {
+    overflow: hidden;
+}
+.main-content {
+    height: 100%;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.menu__list {
+    text-transform: uppercase;
+    position: fixed;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    margin-top: 15px;
+    z-index: 1000;
+}
+
+.menu__item {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.menu__link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pagination__list {
+    position: fixed;
+    top: 20%;
+    right: 2%;
+    z-index: 1000;
+}
+
+.pagination__item {
+    margin-bottom: 30px;
+}
+
+.is-active .pagination__link {
+ border: 1px solid #de4463;
+}
+
+.pagination__link {
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.pagination__link:hover {
+    border: 1px solid #de4463;
+}
+
+.pagination__link:before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #de4463;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
